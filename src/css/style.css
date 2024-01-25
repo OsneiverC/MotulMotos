@@ -1,6 +1,16 @@
-/* html{
+html{
   scroll-behavior: smooth;
-} */
+}
+
+.selected{
+  border-bottom: 2px;
+  border-color: white;
+}
+
+
+
+
+
 
 .swiper {
     width: 100%;
@@ -44,3 +54,8 @@
 .card-back {transform: perspective(500px) rotateY(180deg);}
 .card:hover .card-from { transform: perspective(500px) rotateY(180deg); }
 .card:hover .card-back { transform: perspective(500px) rotateY(360deg); }
+
+
+section [id] {
+  scroll-margin-top: 70px;
+}
