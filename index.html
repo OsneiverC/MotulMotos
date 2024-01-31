@@ -30,15 +30,19 @@
 
 <body class="font-sans">
 
-    <header class="flex bg-red-600 justify-evenly items-center h-[50px]">
-        <figure class="w-[30%] sm:w-[15%]"><img src="stacti/Logos/LOGO LETRAS BLANCAS MOTULMOTOS.png" alt="motulmotos"></figure>
-            <ul class="menu hidden sm:flex gap-[2.5rem] text-white font-bold p-2">
-                <li class="border-b-2 border-white cursor-pointer "><a href="#inicio">INICIO</a></li>
-                <li class="hover:border-white border-b-2 border-transparent cursor-pointer "><a href="#nosotros">NOSOTROS</a></li>
-                <li class="hover:border-white border-b-2 border-transparent  cursor-pointer "><a href="#servicios">SERVICIOS</a></li>
-                <li class="hover:border-white border-b-2 border-transparent cursor-pointer "><a href="#ubicacion">UBICACIÓN</a></li>
+    <header class="flex bg-red-500 justify-evenly items-center h-[50px]">
+        <figure class="w-[30%] sm:w-[15%]"><img src="stacti/Logos/LOGO LETRAS BLANCAS MOTULMOTOS.png" alt="motulmotos">
+        </figure>
+        <ul class="menu hidden sm:flex gap-[2.5rem] text-white font-bold p-2">
+            <li class="border-b-2 border-white cursor-pointer "><a href="#inicio">INICIO</a></li>
+            <li class="hover:border-white border-b-2 border-transparent cursor-pointer "><a
+                    href="#nosotros">NOSOTROS</a></li>
+            <li class="hover:border-white border-b-2 border-transparent  cursor-pointer "><a
+                    href="#servicios">SERVICIOS</a></li>
+            <li class="hover:border-white border-b-2 border-transparent cursor-pointer "><a
+                    href="#ubicacion">UBICACIÓN</a></li>
 
-            </ul>
+        </ul>
         <figure class="hamburge sm:hidden text-2xl"><i class="fa-solid fa-bars" style="color: #f1f1f1;"></i></figure>
         <figure class="close-menu hidden text-2xl"><i class="fa-solid fa-x" style="color: #f1f1f1;"></i></figure>
 
@@ -52,9 +56,9 @@
             </ul>
         </div>
     </header>
-    <section id="#inicio" class="sm:flex justify-between bg-gradient-to-br from-white from-50% to-red-600 px-[10%] ">
+    <section id="#inicio" class="md:flex justify-between bg-gradient-to-br from-white from-50% to-red-600 px-[10%] ">
 
-        <div class="pl-[5%] sm:w-[50%] pt-[5%] text-left">
+        <div class="pl-[5%] md:w-[50%] pt-[5%] text-left">
             <h1 class="font-bold text-4xl text-red-600">TODO LO QUE NECESITA TU MOTOCICLETA EN UN SOLO LUGAR</h1>
             <p class="my-[5%] text-md">Somos Almacén de repuestos a nivel nacional, con más de <b>15 años de
                     experiencia</b> y contamos con personal altamente calificado en el mercado de Auto Partes. Vendemos
@@ -82,7 +86,7 @@
         </figure>
     </section>
 
-    <div class="flex justify-center items-center text-white w-[60px] h-[60px] bg-red-500 rounded-full fixed right-[20px] bottom-[20px] scale-0 ease-in-out duration-300"
+    <div class="flex justify-center items-center text-white w-[60px] h-[60px] bg-red-500 rounded-full fixed right-[20px] bottom-[20px] scale-0 ease-in-out duration-300 z-10"
         id="up">
         <i class="fa-solid fa-chevron-up"></i>
     </div>
@@ -200,25 +204,27 @@
             </div>
         </div>
 
+
     </section>
 
     <section id="nosotros">
         <div class="my-10"><span class="font-bold text-[40px] border-b-4 border-red-600 px-6">Nosotros <i
                     class="fa-solid fa-user-group"></i></span></div>
 
-        <div class="grid sm:grid-cols-2 sm:px-[10%] p-[5%] py-[5%]">
-            <div>
-                <div class=" mb-5">
+        <div class="grid xl:grid-cols-2 sm:px-[10%] p-[5%] py-[5%]">
+            <div class="">
+                <div class=" mb-5 text-center xl:text-left">
                     <p class="text-medium font-medium tracking-[0.40rem] text-red-500">QUIENES SOMOS</p>
                     <h4 class="font-bold text-[40px]">SOMOS <span class="underline text-red-500 hover:text-red-600">
                             #MOTULMOTOS</span>
                     </h4>
                 </div>
-                <p class="opacity-[0.8]">En nuestro taller y almacén de repuestos, nos dedicamos a ofrecer un servicio
+                <p class="opacity-[0.8] max-w-[35rem] m-auto xl:m-0">En nuestro taller y almacén de repuestos, nos dedicamos a ofrecer
+                    un servicio
                     excepcional con la más alta calidad en repuestos. Nuestra misión es superar las expectativas de
                     nuestros clientes y construir relaciones sólidas basadas en la confianza y la excelencia.</p>
-                <div>
-                    <div class="flex justify-center gap-5">
+                <div class="mb-16">
+                    <div class="flex gap-5 justify-center xl:justify-start">
 
                         <div
                             class="bg-red-500 hover:bg-red-600 w-fit text-white p-3 rounded mt-10 flex flex-col items-center justify-center">
@@ -241,7 +247,7 @@
                             <p class="text-sm">REFERENCIAS</p>
                         </div>
                     </div>
-                    <div class="text-center mt-5">
+                    <div class="mt-5 xl:text-left text-center">
                         <span
                             class="text-center border-t-2 border-red-500 text-medium font-medium tracking-[0.40rem] text-red-500">NUESTROS
                             NÚMEROS HABLAN</span>
@@ -250,7 +256,7 @@
 
 
             </div>
-            <figure><img src="stacti/bg/bg.jpg" alt="" class="shadow-2xl"></figure>
+            <figure class="flex justify-center items-center"><img src="stacti/bg/bg.jpg" alt="" class="shadow-2xl"></figure>
         </div>
 
         <div class="mb-10 text-center leading-10">
@@ -260,8 +266,7 @@
         <div>
             <div class="sm:flex justify-center gap-4">
 
-                <div
-                    class="sm:w-[300px] p-4 m-2 border-2 border-red-600 rounded bg-gray-100 shadow hover:shadow-2xl">
+                <div class="sm:w-[300px] p-4 m-2 border-2 border-red-600 rounded bg-gray-100 shadow hover:shadow-2xl">
                     <figure>
                         <h3 class="font-bold text-xl text-center opacity-[0.6]">ASESOR <i
                                 class="fa-solid fa-comment-dots"></i></h3>
@@ -287,15 +292,15 @@
                                 class="fa-solid fa-wrench"></i></h3>
                         <img src="stacti/personas/joseMecanico.png" alt="">
                     </figure>
-                    <div class="">
+                    <div class="flex flex-col grow">
                         <h3 class="font-bold text-2xl text-center text-red-600">JOSE MIGUEL PEÑALOZA</h3>
-                        <p class="text-sm">le dicen el flaco, nuestro técnico nivel plata, joven alegre, bailarín, le
+                        <p class="text-sm grow">le dicen el flaco, nuestro técnico nivel plata, joven alegre, bailarín, le
                             gusta
                             trabajar escuchando música, muy honrado y apasionado por lo que hace, su marca preferida
                             YAMAHA
                             pero hace servicio técnico a todas las marcas de moto</p>
                         <a href="https://wa.link/ax5ky2"
-                            class="block text-center border-2 border-red-600 p-3 mt-5 rounded w-full text-red-600 hover:bg-red-600 hover:text-white ease-in-out duration-75">Agenda
+                            class="block text-center border-2 border-red-600 p-3 rounded w-full text-red-600 hover:bg-red-600 hover:text-white ease-in-out duration-75">Agenda
                             Tu cita</a>
                     </div>
                 </div>
@@ -304,12 +309,12 @@
 
     </section>
 
-    <section>
+    <section id="servicios">
         <div class="my-10 text-center"><span class="font-bold text-4xl border-b-4 border-red-600 px-6">¿ Por que
                 Nosotros ?</span></div>
-        <div class="sm:px-[10%] flex sm:flex-row flex-col gap-5 justify-center ">
+        <div class="sm:px-[10%] flex flex-wrap md:flex-row flex-col gap-5 justify-center ">
 
-            <div class="card p-3 mt-5  m-auto">
+            <div class="card p-3 mt-5 m-auto">
                 <div class="card-from p-3 bg-gray-600 flex flex-col justify-center items-center">
                     <figure class=""><img src="stacti/iconos/lubricante.png" alt="">
                     </figure>
@@ -360,7 +365,7 @@
                     </figure>
                     <h4 class="font-bold text-white text-center">MULTIPLES MÉTODOS DE PAGOS</h4>
                 </div>
-                <div class="card-back p-3 flex justify-center items-center bg-gray-800">
+                <div class="card-back p-3 text-center flex justify-center items-center bg-gray-800">
                     <p class="text-white">Ofrecemos múltiples métodos de crédito y opciones de pago para que adquieras
                         tus repuestos sin complicaciones. Tu comodidad es nuestra prioridad. ¡Obtén lo que necesitas
                         fácilmente con nosotros!</p>
@@ -377,14 +382,16 @@
                     mercado</span>
             </div>
             <div>
-                <div class="flex justify-center gap-5">
-                    <figure><img src="stacti/Distribuidores/Yamaha L1.png" width="200px"></figure>
-                    <figure><img src="stacti/Distribuidores/Hero logo.png" width="200px"></figure>
-                    <figure><img src="stacti/Distribuidores/Akt logo.png" width="200px"></figure>
-                    <figure><img src="stacti/Distribuidores/Igb logo.png" width="80px"></figure>
-                    <figure><img src="stacti/Distribuidores/japan l2.png" width="80px"></figure>
-                    <figure><img src="stacti/Distribuidores/Jp Partes logo.jpeg" width="180px"></figure>
-                    <figure><img src="stacti/Distribuidores/Motul Logo.png" width="200px"></figure>
+                <div class=" ">
+                    <figure class="w-full flex flex-wrap flex-row w-[100%] gap-5 justify-center items-center px-5">
+                        <img src="stacti/Distribuidores/Yamaha L1.png" class=" w-[200px] h-[60px]">
+                        <img src="stacti/Distribuidores/Hero logo.png" class=" w-[200px] h-[60px]">
+                        <img src="stacti/Distribuidores/Akt logo.png" class=" w-[200px] h-[60px]">
+                        <img src="stacti/Distribuidores/Motul Logo.png" class=" w-[200px] h-[60px]">
+                        <img src="stacti/Distribuidores/Igb logo.png" class=" w-[200px]">
+                        <img src="stacti/Distribuidores/japan l2.png" class=" w-[200px]">
+                        <img src="stacti/Distribuidores/Jp Partes logo.jpeg" class=" w-[200px]">
+                    </figure>
 
                 </div>
             </div>
@@ -393,7 +400,7 @@
     </section>
 
     <section>
-        <div class="grid grid-cols-1 sm:grid-cols-2 bg-[url('stacti/bg/bgcreditos1.jpg')] bg-cover text-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 bg-[url('stacti/bg/bgcreditos1.jpg')] bg-cover text-white">
             <div class="p-5 flex flex-col self-center">
                 <div class="mb-5 leading-10 px-6">
                     <p class="text-xl font-medium tracking-[0.40rem] text-red-500">SI NO TIENE VEHÍCULO ADQUIÉRALO</p>
@@ -410,7 +417,7 @@
                         CRÉDITO</a>
                 </div>
             </div>
-            <figure class="scale-x-[-1] hidden sm:block">
+            <figure class="scale-x-[-1] hidden md:flex justify-center items-center">
                 <img src="stacti/bg/motos.png" alt="">
             </figure>
 
@@ -419,11 +426,11 @@
     <section class="" id="ubicacion">
         <div class="my-10"><span class="font-bold text-[40px] border-b-4 border-red-600 sm:px-6">Ubicación <i
                     class="fa-solid fa-location-dot"></i></span></div>
-        <div class=" sm:px-[10%]">
+        <div class=" px-[10%]">
 
-            <div class="grid grid-cols-1 xl:grid-cols-2 justify-center items-center">
+            <div class="grid grid-cols-1 2xl:grid-cols-2 justify-center items-center">
                 <figure class="">
-                    <iframe class="sm:w-[600px] w-screen h-[450px]"
+                    <iframe class="w-full 2xl:w-[550px] h-[450px]"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.4970483628904!2d-73.25681132512206!3d10.461426989668851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8ab95c406772d7%3A0xe6ea586319d402c3!2sMOTULMOTOS!5e0!3m2!1ses!2sco!4v1704904871987!5m2!1ses!2sco"
                         style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -457,7 +464,7 @@
     <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
     <script type="text/javascript">
         var emblaNode = document.querySelector('.embla')
-        var options = {loop: false}
+        var options = { loop: false }
         var embla = EmblaCarousel(emblaNode, options)
 
 

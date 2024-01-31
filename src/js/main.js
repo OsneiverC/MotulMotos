@@ -75,3 +75,8 @@ listAll.forEach( li=>{
         men.classList.replace("hidden","sm:hidden")
     })
 } )
+
+
+
+
+
