@@ -76,7 +76,17 @@ listAll.forEach( li=>{
     })
 } )
 
+const parrafi = document.querySelector(".parrafi")
+const lipsuh = document.querySelectorAll(".lipush")
 
+
+lipsuh.forEach((f)=> f.addEventListener("click",(e)=> e.currentTarget.lastElementChild.classList.toggle('hidden')))
+
+
+ScrollReveal().reveal('.bottom', { delay: 300, origin: 'bottom', distance:'-150px'});
+ScrollReveal().reveal('.desaparecer', { delay: 300});
+ScrollReveal().reveal('.right', { delay: 300, origin: 'right', distance:'-150px'});
+ScrollReveal().reveal('.left', { delay: 300, origin: 'left', distance:'-150px'});
 
 
 

@@ -30,7 +30,7 @@
 
 <body class="font-sans">
 
-    <header class="flex bg-red-500 justify-evenly items-center h-[50px]">
+    <header class="bottom flex bg-red-500 justify-evenly items-center h-[50px]">
         <figure class="w-[30%] sm:w-[15%]"><img src="stacti/Logos/LOGO LETRAS BLANCAS MOTULMOTOS.png" alt="motulmotos">
         </figure>
         <ul class="menu hidden sm:flex gap-[2.5rem] text-white font-bold p-2">
@@ -46,7 +46,7 @@
         <figure class="hamburge sm:hidden text-2xl"><i class="fa-solid fa-bars" style="color: #f1f1f1;"></i></figure>
         <figure class="close-menu hidden text-2xl"><i class="fa-solid fa-x" style="color: #f1f1f1;"></i></figure>
 
-        <div class="hamburger-menu absolute hidden w-screen h-screen bg-white top-12">
+        <div class="hamburger-menu absolute hidden w-screen h-screen bg-white top-12 z-[1000]">
             <ul class=" flex flex-col items-center justify-center gap-6 text-red-500 text-2xl h-full font-bold p-2 ">
                 <li class="navList hover:border-b-2 cursor-pointer"><a href="#inicio">Inicio</a></li>
                 <li class="navList hover:border-b-2 cursor-pointer"><a href="#nosotros">Nosotros</a></li>
@@ -56,11 +56,11 @@
             </ul>
         </div>
     </header>
-    <section id="#inicio" class="md:flex justify-between bg-gradient-to-br from-white from-50% to-red-600 px-[10%] ">
+    <section id="#inicio" class="desaparecer md:flex justify-between p-[5%] bg-[url('/stacti/bg/fondo.pn')] bg-cover bg-center">
 
-        <div class="pl-[5%] md:w-[50%] pt-[5%] text-left">
+        <div class="pr-[5%] lg:w-[50%] pt-[5%] text-left">
             <h1 class="font-bold text-4xl text-red-600">TODO LO QUE NECESITA TU MOTOCICLETA EN UN SOLO LUGAR</h1>
-            <p class="my-[5%] text-md">Somos Almacén de repuestos a nivel nacional, con más de <b>15 años de
+            <p class="my-[5%] text-md">Somos un Almacén de repuestos a nivel nacional, con más de <b>15 años de
                     experiencia</b> y contamos con personal altamente calificado en el mercado de Auto Partes. Vendemos
                 repuestos originales y homologados.</p>
             <a href="https://wa.link/75vbwc" target="_blank"
@@ -81,8 +81,8 @@
             </figure>
 
         </div>
-        <figure class="">
-            <img src="stacti/personas/edit.png" width="500px" alt="Tavo">
+        <figure class="w-[50%] hidden lg:flex relative justify-center">
+            <img src="stacti/bg/fondo2.png" alt="" class="w-[70%]">
         </figure>
     </section>
 
@@ -94,11 +94,11 @@
 
     <section class="mc">
         <div class="my-10 leading-10">
-            <p class="text-sm font-medium tracking-[0.40rem] text-red-500 px-6">Productos Estrellas </p>
-            <span class="font-bold text-[40px] border-b-4 border-red-600 px-6">Productos MC</span>
+            <p class="text-sm font-medium tracking-[0.40rem] text-red-500 px-6">Productos MC </p>
+            <span class="font-bold text-[40px] border-b-4 border-red-600 px-6">Productos Estrellas</span>
         </div>
 
-        <div class="embla">
+        <div class="embla left">
             <div class="embla__container text-white flex  w-full gap-4 justify-center">
 
                 <div class="embla__slide bg-gray-600 shadow-2xl p-5 text-center rounded-md">
@@ -187,7 +187,7 @@
                         <h2 class="font-bold text-2xl text-red-500 border-b-2 border-red-600">CHAIN PASTE</h2>
                     </div>
                     <div class="product-content flex justify-between">
-                        <div class="product-txt text-left w-[50%] ">
+                        <div class="product-txt text-left w-[50%]">
                             <span class="text-red-400 font-bold">$38.000</span>
                             <h3 class="my-[10px] font-bold">C5</h3>
                             <p>Grasa de altas prestaciones formulada con jabón complejo de aluminio, Extrema Presión,
@@ -207,19 +207,67 @@
 
     </section>
 
+
+    <section class="right py-10">
+        <h4 class="text-center text-4xl font-bold"><span class="border-b-4 border-red-500">En que categoría estas interesado</span></h4>
+        <div class="px-[10%] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 self-center mt-8">
+
+            <a href="https://wa.link/rm8omf" target="_blank" class="p-5 bg-cover flex flex-col justify-center  items-center bg-no-repeat rounded-md w-[100%] h-[100%] bg-center bg-[url('stacti/bg/acelerador.jpg')] hover:scale-[1.04]">
+                <img src="stacti/iconos/freno.png" alt="" class="w-[50%]">
+                <h3 class="text-white font-bold">ACELERADOR</h3>
+            </a>
+
+            <a href="https://wa.link/i9umqp" class="p-5 bg-cover flex flex-col justify-center  items-center bg-no-repeat rounded-md w-[100%] h-[100%] bg-center bg-[url('stacti/bg/bgfrenos.jpg')] hover:scale-[1.04]">
+                <img src="stacti/iconos/frenos.png" alt="" class="w-[50%]">
+                <h3 class="text-white font-bold">Frenos</h3>
+            </a>
+
+            <a href="https://wa.link/ncshua" class=" p-5 bg-cover flex flex-col justify-center  items-center bg-no-repeat rounded-md w-[100%] h-[100%] bg-center bg-[url('stacti/bg/bgluces.jpg')] hover:scale-[1.04]">
+                <img src="stacti/iconos/luces-de-coche.png" alt="" class="w-[50%]">
+                <h3 class="text-white font-bold">Luces</h3>
+            </a>
+
+            <a href="https://wa.link/8etmg1" class=" p-5 bg-cover flex flex-col justify-center  items-center bg-no-repeat rounded-md w-[100%] h-[100%] bg-center bg-[url('stacti/bg/bgmantenimiento.jpg')] hover:scale-[1.04]">
+                <img src="stacti/iconos/mantenimiento.png" alt="" class="w-[50%]">
+                <h3 class="text-white font-bold">Mantenimientos</h3>
+            </a>
+
+            <a href="https://wa.link/e4tjqa" class=" p-5 bg-cover flex flex-col justify-center  items-center bg-no-repeat rounded-md w-[100%] h-[100%] bg-center bg-[url('stacti/bg/bgmotor.jpg')] hover:scale-[1.04]">
+                <img src="stacti/iconos/motor-del-coche.png" alt="" class="w-[50%]">
+                <h3 class="text-white font-bold">Motor</h3>
+            </a>
+
+            <a href="https://wa.link/l90o3b" class=" p-5 bg-cover flex flex-col justify-center  items-center bg-no-repeat rounded-md w-[100%] h-[100%] bg-center bg-[url('stacti/bg/bgfiltros.jpg')] hover:scale-[1.04]">
+                <img src="stacti/iconos/filtro-de-aire.png" alt="" class="w-[50%]">
+                <h3 class="text-white font-bold">Filtración</h3>
+            </a>
+
+            <a href="https://wa.link/favali" class=" p-5 bg-cover flex flex-col justify-center  items-center bg-no-repeat rounded-md w-[100%] h-[100%] bg-center bg-[url('stacti/bg/bgsuspension.jpg')] hover:scale-[1.04]">
+                <img src="stacti/iconos/suspension.png" alt="" class="w-[50%]">
+                <h3 class="text-white font-bold">Suspensiones</h3>
+            </a>
+
+            <a href="https://wa.link/g84nm2" class=" p-5 bg-cover flex flex-col justify-center  items-center bg-no-repeat rounded-md w-[100%] h-[100%] bg-center bg-[url('stacti/bg/bgelectrico.jpg')] hover:scale-[1.04]">
+                <img src="stacti/iconos/herramienta.png" alt="" class="w-[50%]">
+                <h3 class="text-white font-bold">Eléctrico</h3>
+            </a>
+
+        </div>
+    </section>
+
     <section id="nosotros">
-        <div class="my-10"><span class="font-bold text-[40px] border-b-4 border-red-600 px-6">Nosotros <i
+        <div class="my-10 right"><span class="font-bold text-[40px] border-b-4 border-red-600 px-6">Nosotros <i
                     class="fa-solid fa-user-group"></i></span></div>
 
-        <div class="grid xl:grid-cols-2 sm:px-[10%] p-[5%] py-[5%]">
-            <div class="">
+        <div class="grid xl:grid-cols-2 sm:px-[5%] p-[5%] ">
+            <div class="right">
                 <div class=" mb-5 text-center xl:text-left">
                     <p class="text-medium font-medium tracking-[0.40rem] text-red-500">QUIENES SOMOS</p>
                     <h4 class="font-bold text-[40px]">SOMOS <span class="underline text-red-500 hover:text-red-600">
                             #MOTULMOTOS</span>
                     </h4>
                 </div>
-                <p class="opacity-[0.8] max-w-[35rem] m-auto xl:m-0">En nuestro taller y almacén de repuestos, nos dedicamos a ofrecer
+                <p class="opacity-[0.8] max-w-[35rem] m-auto xl:m-0 text-lg">En nuestro taller y almacén de repuestos, nos dedicamos a ofrecer
                     un servicio
                     excepcional con la más alta calidad en repuestos. Nuestra misión es superar las expectativas de
                     nuestros clientes y construir relaciones sólidas basadas en la confianza y la excelencia.</p>
@@ -229,7 +277,7 @@
                         <div
                             class="bg-red-500 hover:bg-red-600 w-fit text-white p-3 rounded mt-10 flex flex-col items-center justify-center">
                             <h4 class="text-4xl ">2K+</h4>
-                            <p class="text-sm">CLIENTES <br> SATISFECHOS</p>
+                            <p class="text-sm text-center">CLIENTES <br> SATISFECHOS</p>
                         </div>
 
                         <div
@@ -256,17 +304,47 @@
 
 
             </div>
-            <figure class="flex justify-center items-center"><img src="stacti/bg/bg.jpg" alt="" class="shadow-2xl"></figure>
+            <figure class="left flex justify-center items-center"><img src="stacti/bg/bg.jpg" alt="" class="shadow-2xl"></figure>
         </div>
 
-        <div class="mb-10 text-center leading-10">
+        <section class="my-[5%]">
+            <article class="flex">
+                <figure class="w-[50%] hidden lg:block bg-[url('stacti/bg/img.jpg')] bg-cover bg-center"></figure>
+                <div class="lg:w-[50%] w-full bg-red-500 flex flex-col justity-center text-white p-5 h-fit">
+                    <h4 class="font-bold sm:text-4xl text-2xl my-10"><span class="bg-red-600 p-2">¡COTICE CON NOSOTROS!</span></h4>
+                    <p class="text-2xl ">Por favor escriba el modelo del vehículo y los repuestos que necesita.</p>
+                    <form action="" class="flex flex-col mt-10">
+                        <label for="" class="font-bold text-lg">Vehículo</label>
+                        <input type="text" placeholder="Marca y Vehículo" class="p-3 rounded-md text-black">
+                        <label for="text" class="font-bold text-lg">Repuestos</label>
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Cuéntanos, ¿que repuestos buscas ? " class="p-3 rounded-md text-black"></textarea>
+                        <a href="https://wa.link/75vbwc" class="bg-red-400 font-bold w-[30%] p-3 mt-5 text-center">Cotizar</a>
+                    </form>
+                </div>
+            </article>
+            <div class="bg-red-300 w-full py-5">
+
+                <div class="">
+                    <h4 class="text-2xl text-center text-red-700 font-bold">Síguenos en nuestras redes sociales:</h4>
+                    <figure class="text-4xl text-center mt-3">
+                        <a href="https://www.facebook.com/motosvalledupar/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook mx-5 text-red-800"></i></a>
+                        <a href="https://www.instagram.com/motulmotos/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram mx-5 text-red-800"></i></a>
+                        <a href="https://wa.link/75vbwc" target="_blank"><i class="fa-brands fa-whatsapp mx-5 text-red-800"></i></a>
+                        <a href="#motulmotosvalledupar@gmail.com"><i class="fa-solid fa-envelope mx-5 text-red-800"></i></a>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="desaparecer mb-10 text-center leading-10">
             <p class="text-xl font-medium tracking-[0.40rem] text-red-500">LA MEJOR ATENCIÓN</p>
             <span class="font-bold text-[40px] border-b-4 border-red-500 px-6">Nuestro Personal Calificado</span>
         </div>
         <div>
             <div class="sm:flex justify-center gap-4">
 
-                <div class="sm:w-[300px] p-4 m-2 border-2 border-red-600 rounded bg-gray-100 shadow hover:shadow-2xl">
+                <div class="right sm:w-[300px] p-4 m-2 border-2 border-red-600 rounded bg-gray-100 shadow hover:shadow-2xl">
                     <figure>
                         <h3 class="font-bold text-xl text-center opacity-[0.6]">ASESOR <i
                                 class="fa-solid fa-comment-dots"></i></h3>
@@ -279,14 +357,14 @@
                             en repuestos originales YAMAHA, pero con una amplia experiencia en repuestos HONDA, AKT,
                             SUZUKI,
                             HERO Y AUTECO.</p>
-                        <a href="https://wa.link/ax5ky2"
+                        <a href="https://wa.link/ax5ky2" target="_blank"
                             class="block text-center border-2 border-red-600 p-3 mt-5 rounded w-full text-red-600 hover:bg-red-600 hover:text-white ease-in-out duration-75">Agenda
                             Tu cita</a>
                     </div>
                 </div>
 
                 <div
-                    class="flex flex-col sm:w-[300px] p-4 m-2 border-2 border-red-600 rounded bg-gray-100 shadow hover:shadow-2xl">
+                    class="left flex flex-col sm:w-[300px] p-4 m-2 border-2 border-red-600 rounded bg-gray-100 shadow hover:shadow-2xl">
                     <figure>
                         <h3 class="font-bold text-xl text-center opacity-[0.6]">MECÁNICO NIVEL PLATA <i
                                 class="fa-solid fa-wrench"></i></h3>
@@ -299,7 +377,7 @@
                             trabajar escuchando música, muy honrado y apasionado por lo que hace, su marca preferida
                             YAMAHA
                             pero hace servicio técnico a todas las marcas de moto</p>
-                        <a href="https://wa.link/ax5ky2"
+                        <a href="https://wa.link/ax5ky2" target="_blank"
                             class="block text-center border-2 border-red-600 p-3 rounded w-full text-red-600 hover:bg-red-600 hover:text-white ease-in-out duration-75">Agenda
                             Tu cita</a>
                     </div>
@@ -374,77 +452,85 @@
         </div>
 
         <article class="my-[10%]">
-            <div class="mb-10 text-center leading-10">
+            <div class="mb-10 text-center leading-10 bottom">
                 <p class="text-xl font-medium tracking-[0.40rem] text-red-500 px-8">VARIEDAD DE MARCAS PARA TU
                     MOTOCICLETA
                 </p>
-                <span class="font-bold text-[40px] border-b-4 border-red-500 px-6">Tenemos los mejores Proveedores del
+                <span class=" font-bold text-[40px] border-b-4 border-red-500 px-6">Tenemos los mejores Proveedores del
                     mercado</span>
             </div>
-            <div>
-                <div class=" ">
-                    <figure class="w-full flex flex-wrap flex-row w-[100%] gap-5 justify-center items-center px-5">
-                        <img src="stacti/Distribuidores/Yamaha L1.png" class=" w-[200px] h-[60px]">
-                        <img src="stacti/Distribuidores/Hero logo.png" class=" w-[200px] h-[60px]">
-                        <img src="stacti/Distribuidores/Akt logo.png" class=" w-[200px] h-[60px]">
-                        <img src="stacti/Distribuidores/Motul Logo.png" class=" w-[200px] h-[60px]">
-                        <img src="stacti/Distribuidores/Igb logo.png" class=" w-[200px]">
-                        <img src="stacti/Distribuidores/japan l2.png" class=" w-[200px]">
-                        <img src="stacti/Distribuidores/Jp Partes logo.jpeg" class=" w-[200px]">
+            <div class="slider left">
+                    <figure class="slider-track">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Yamaha_Motor_logo.svg/1024px-Yamaha_Motor_logo.svg.png" class="slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Hero_MotoCorp_Logo.svg/2560px-Hero_MotoCorp_Logo.svg.png" class="slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/AKT_logo.PNG" class="slide">
+                        <img src="stacti/Distribuidores/Motul Logo.png" class="slide ">
+                        <img src="stacti/Distribuidores/Igb logo.png" class="slide">
+                        <img src="stacti/Distribuidores/japan l2.png" class="slide">
+                        <img src="stacti/Distribuidores/Jp Partes logo.jpeg" class="slide">
+
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Yamaha_Motor_logo.svg/1024px-Yamaha_Motor_logo.svg.png" class="slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Hero_MotoCorp_Logo.svg/2560px-Hero_MotoCorp_Logo.svg.png" class="slide">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/AKT_logo.PNG" class="slide">
+                        <img src="stacti/Distribuidores/Motul Logo.png" class="slide">
+                        <img src="stacti/Distribuidores/Igb logo.png" class="slide">
+                        <img src="stacti/Distribuidores/japan l2.png" class="slide">
+                        <img src="stacti/Distribuidores/Jp Partes logo.jpeg" class="slide">
                     </figure>
 
-                </div>
             </div>
 
         </article>
     </section>
 
-    <section>
-        <div class="grid grid-cols-1 md:grid-cols-2 bg-[url('stacti/bg/bgcreditos1.jpg')] bg-cover text-white">
-            <div class="p-5 flex flex-col self-center">
+    <section class="">
+        <div class="grid md:grid-cols-2 bg-[url('stacti/bg/bgcreditos1.jpg')] bg-cover text-white py-[20px]">
+            <div class="right p-5 flex flex-col self-center ">
                 <div class="mb-5 leading-10 px-6">
-                    <p class="text-xl font-medium tracking-[0.40rem] text-red-500">SI NO TIENE VEHÍCULO ADQUIÉRALO</p>
-                    <span class="font-bold text-[30px] border-b-4 block text-black border-red-500">NADA MEJOR QUE
-                        ESTRENAR MOTO
-                        NUEVA</span>
+                    <p class="text-lg font-medium tracking-[0.40rem] text-white">ACELERAMOS TUS SUEÑOS</p>
+                    <span class="font-bold text-[30px] border-b-4 block text-black border-red-500">YA NO HAY EXCUSA PARA ADQUIRIR TU MOTO
+                        </span>
                 </div>
-                <div>
-                    <p class="px-5 text-xl text-black block">El préstamo para motos tan rápido como tú lo deseas; damos
+                <div class="px-5">
+                    <p class="text-xl text-black block">El préstamo para motos tan rápido como tú lo deseas; damos
                         respuesta a
                         tú solicitud de crédito para moto nueva o usada en tan solo 10 Minutos.</p>
-                    <a href="https://wa.link/fc4q99"
-                        class="bg-red-500 p-3 block mt-10 w-fit font-bold text-black rounded">COTIZA TU
-                        CRÉDITO</a>
+                        <p class="text-black "><span class="font-bold">Notas:</span> Tenemos convenio con las marcas suzuki, auteko, Uma, Honda, yamaha, Hero y Akt..</p>
+                    <div class="flex gap-4">
+
+                        <a href="https://wa.link/fc4q99"
+                            class="bg-red-500 hover:bg-red-600 p-3 block mt-10 w-fit font-bold text-white rounded border-2 border-red-600">ASESORA #1</a>
+                        <a href="https://wa.link/fc4q99"
+                            class="bg-red-500 hover:bg-red-600 p-3 block mt-10 w-fit font-bold text-white rounded border-2 border-red-600">ASESORA #2</a>
+                    </div>
                 </div>
             </div>
-            <figure class="scale-x-[-1] hidden md:flex justify-center items-center">
-                <img src="stacti/bg/motos.png" alt="">
+            <figure class="left  hidden md:flex justify-center items-center relative">
+                <img src="stacti/Logos/LOGO AMG INVERSIONES.png" alt="" class="absolute w-[15%] top-0 right-5">
+                <img src="stacti/bg/motos.png" alt="" class="w-[90%]">
             </figure>
 
     </section>
 
     <section class="" id="ubicacion">
-        <div class="my-10"><span class="font-bold text-[40px] border-b-4 border-red-600 sm:px-6">Ubicación <i
+        <div class="my-10 desaparecer"><span class="font-bold text-[40px] border-b-4 border-red-600 sm:px-6">Ubicación <i
                     class="fa-solid fa-location-dot"></i></span></div>
         <div class=" px-[10%]">
 
             <div class="grid grid-cols-1 2xl:grid-cols-2 justify-center items-center">
-                <figure class="">
+                <figure class="right">
                     <iframe class="w-full 2xl:w-[550px] h-[450px]"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.4970483628904!2d-73.25681132512206!3d10.461426989668851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8ab95c406772d7%3A0xe6ea586319d402c3!2sMOTULMOTOS!5e0!3m2!1ses!2sco!4v1704904871987!5m2!1ses!2sco"
                         style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </figure>
-                <div class="p-3">
+                <div class="p-3 left">
                     <div class=" border-b-2 border-red-500">
                         <p class="text-medium font-medium tracking-[0.40rem] text-red-500 ">DONDE ESTAMOS UBICADOS</p>
                         <h4 class="font-bold text-[40px]">FÁCIL DE LLEGAR</h4>
                     </div>
-                    <p class="mt-5 px-5 text-xl">Puedes ampliar la imagen o moverse sobre ella para buscar el detalle de
-                        la dirección que le
-                        permita ubicarnos fácilmente utilizando la aplicación Google Maps, también nos puede encontrar
-                        con la
-                        ayuda de un GPS ingresando las Coordenadas que se suministraron con anterioridad.</p>
+                    <p class="mt-5 px-5 text-xl">
+                        Nos encontramos a lo largo de toda la Avenida Fundación, justo en el cruce con el semáforo de Los Manguitos, a solo una cuadra de la estación de servicio Libia Elena (conocida como Bomba Ava Carbajal). Estamos al lado de la tienda de compra venta de artículos usados en Valledupar, y diagonalmente frente al Dollarcity del Primero de Mayo.</p>
 
                 </div>
             </div>
@@ -453,12 +539,61 @@
     </section>
 
 
+    <section>
+        <div class="my-10 leading-10 right">
+            <p class="text-sm font-medium tracking-[0.40rem] text-red-500 px-6">Lo mas preguntado ------</p>
+            <span class="font-bold text-[40px] border-b-4 border-red-600 px-6">Preguntas Frecuentes</span>
+        </div>
+
+        <ul class="px-[10%] flex flex-col gap-3 bottom">
+
+            <li class="lipush p-5 bg-gray-200 rounded-md hover:bg-gray-300 cursor-pointer">
+               <div class="flex justify-between w-full items-center gap-3">
+                   <div class="flex items-center gap-3">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-circle-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" stroke-width="0" fill="currentColor" /></svg>
+                       <h3 class="font-bold text-lg">¿Cómo puedo pagar el repuesto que estoy comprando?</h3>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 10l6 6l6 -6h-12" /></svg>
+                </div>
+                <p class="hidden parrafi mt-5">Tenemos los siguientes métodos de pagos disponible para hacer tu compra: <br>
+                    <b> Tarjeta de Crédito o Débito <br>
+                    Transferencia Bancolombia</b> <br>
+                    Cuando vayas a hacer la compra nos dices qué método te queda más facil y te enviamos los detalles para que puedas hacer el pago.
+                    Si el vendedor del repuesto que estás buscando comprar está en tu misma ciudad puedes coordinar para pagar contraentrega.</p>
+            </li>
+
+            <li class="lipush p-5 bg-gray-200 rounded-md hover:bg-gray-300 cursor-pointer">
+                <div class="flex justify-between w-full items-center gap-3">
+                    <div class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-circle-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" stroke-width="0" fill="currentColor" /></svg>
+                        <h3 class="font-bold text-lg">¿Ser cliente de MotulMotos Tiene algún Beneficio?</h3>
+                     </div>
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 10l6 6l6 -6h-12" /></svg>
+                 </div>
+                 <p class="hidden parrafi mt-5"> Por supuesto. Nuestros clientes leales disfrutan de una variedad de servicios gratuitos, además de recibir premios especiales como parte de nuestros beneficios</p>
+             </li>
+
+             <li class="lipush p-5 bg-gray-200 rounded-md hover:bg-gray-300 cursor-pointer">
+                <div class="flex justify-between w-full items-center gap-3">
+                    <div class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-info-circle-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 2c5.523 0 10 4.477 10 10a10 10 0 0 1 -19.995 .324l-.005 -.324l.004 -.28c.148 -5.393 4.566 -9.72 9.996 -9.72zm0 9h-1l-.117 .007a1 1 0 0 0 0 1.986l.117 .007v3l.007 .117a1 1 0 0 0 .876 .876l.117 .007h1l.117 -.007a1 1 0 0 0 .876 -.876l.007 -.117l-.007 -.117a1 1 0 0 0 -.764 -.857l-.112 -.02l-.117 -.006v-3l-.007 -.117a1 1 0 0 0 -.876 -.876l-.117 -.007zm.01 -3l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007z" stroke-width="0" fill="currentColor" /></svg>
+                        <h3 class="font-bold text-lg">¿Tienen encargas disponibles al cliente?</h3>
+                     </div>
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 10l6 6l6 -6h-12" /></svg>
+                 </div>
+                 <p class="hidden parrafi mt-5">Por supuesto, dado que mantenemos convenios directos con las marcas, si no contamos con el repuesto que usted necesita, nos encargamos de hacer el pedido por usted. <b>Solo requiere abonar el 50% del valor de su pedido por adelantado</b>, y el resto lo puede pagar al momento de recibirlo.</p>
+             </li>
+
+        </ul>
+    </section>
+
 
     <footer class="bg-red-600 flex justify-center p-3 mt-[10%]">
         <p class="text-white text-center">© Copyright 2024 - 2025 |<span class="hover:text-blue-800 cursor-pointer">
                 MOTULMOTOS
             </span>| All Rights Reserved</p>
     </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="src/js/main.js"></script>
     <script src="https://kit.fontawesome.com/95f9104639.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>

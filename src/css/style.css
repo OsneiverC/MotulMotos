@@ -49,3 +49,35 @@ html{
 section [id] {
   scroll-margin-top: 70px;
 }
+
+
+.slider{
+  width: 90vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slider-track{
+  display: flex;
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 40s linear infinite;
+  width: calc(200px * 14);
+}
+
+.slide{
+  width: 200px;
+  height: 60px;
+  margin: 0 30px;
+}
+
+@keyframes scroll {
+  0%{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-200px * 7));
+    transform: translateX(calc(-200px * 7));
+  }
+}
